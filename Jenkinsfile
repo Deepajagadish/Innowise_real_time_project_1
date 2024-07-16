@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-      PATH = "$PATH:/opt/apache-maven-3.9.1/bin"
+      PATH = "$PATH:/opt/maven/bin"
     }
     
     stages {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('CODE CHECKOUT') {
             steps {
-                git 'https://github.com/Mahesh8887/devops_real_time_project_1.git'
+                git 'https://github.com/Deepajagadish/Innowise_real_time_project_1.git'
             }
         }
         stage('MODIFIED IMAGE TAG') {
